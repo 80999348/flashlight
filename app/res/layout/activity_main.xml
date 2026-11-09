@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:id="@+id/root"
+    android:paddingTop="60dp"
+    android:background="#FF111111">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:src="@drawable/torch_off"
+        android:contentDescription="手电筒图标" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="手电筒已关闭"
+        android:textColor="#FFDDDDDD"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_toggle"
+        android:layout_width="240dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:text="打开手电筒"
+        android:textSize="18sp" />
+
+    <!-- 模式选择 -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/mode_torch"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手电筒"
+            android:textColor="#FFFFC107"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/mode_sos"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SOS"
+            android:textColor="#FF888888"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/mode_strobe"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="爆闪"
+            android:textColor="#FF888888"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/mode_screen"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="屏幕光"
+            android:textColor="#FF888888"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- 亮度 -->
+    <SeekBar
+        android:id="@+id/brightness"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:max="10"
+        android:progress="5" />
+
+    <TextView
+        android:id="@+id/brightness_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text=""
+        android:textColor="#FF999999"
+        android:textSize="13sp" />
+
+    <!-- 定时关闭 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="定时自动关闭"
+        android:textColor="#FF999999"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/timer_off"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="不定时"
+            android:textColor="#FFFFC107"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/timer_5"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5分"
+            android:textColor="#FF888888"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/timer_15"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15分"
+            android:textColor="#FF888888"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/timer_30"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30分"
+            android:textColor="#FF888888"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/timer_60"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="60分"
+            android:textColor="#FF888888"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/timer_countdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text=""
+        android:textColor="#FF999999"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/btn_exit"
+        android:layout_width="240dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        android:text="退出"
+        android:textColor="#FF888888"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginTop="36dp"
+        android:text="小虫工作室 @2025"
+        android:textColor="#FF777777"
+        android:textSize="13sp" />
+</LinearLayout>
